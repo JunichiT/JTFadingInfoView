@@ -7,23 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JTInfoView.h"
 
 #pragma mark - Fade in/out options
-typedef enum {
-  FadeInFromAbove = 1,
-  FadeInFromBelow,
-  FadeInFromLeft,
-  FadeInFromRight
-} FadeInType;
-
-typedef enum {
-  FadeOutToAbove = 1,
-  FadeOutToBelow,
-  FadeOutToLeft,
-  FadeOutToRight
-} FadeOutType;
+//typedef enum {
+//  FadeInFromAbove = 1,
+//  FadeInFromBelow,
+//  FadeInFromLeft,
+//  FadeInFromRight
+//} FadeInType;
+//
+//typedef enum {
+//  FadeOutToAbove = 1,
+//  FadeOutToBelow,
+//  FadeOutToLeft,
+//  FadeOutToRight
+//} FadeOutType;
 
 @interface JTFadingInfoViewController : UIViewController
+
+- (void)showSubTitle:(NSString *)subtitle;
+- (void)rem;
+@property (nonatomic, strong)   JTInfoView *subLabel;
 
 #pragma mark - Functions
 /*

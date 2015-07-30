@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "JTFadingInfoViewController.h"
+#import "JTInfoView.h"
 
-@interface ViewController ()
+@interface ViewController (){
+  JTInfoView *view;
+  UILabel *subLabel;
+}
 
 @end
 
@@ -17,11 +22,30 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+  
+  CGRect frame = CGRectMake(10, 10, 300, 40);
+  view = [[JTInfoView alloc] initWithFrame:frame];
+
+  view.text = @"test";
+  view.isAnimationEnabled = YES;
+  
+  [self.view addSubview:view];
+  
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
 }
+
+- (void)disappear
+{
+  NSLog(@"in function disappear!");
+  sleep(5);
+  [view removeFromSuperview];
+  
+}
+
+
 
 @end
