@@ -23,11 +23,20 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   
-  CGRect frame = CGRectMake(10, 10, 300, 40);
+  CGRect screenFrame = [[UIScreen mainScreen] bounds];
+  CGRect frame = CGRectZero;
+  frame.origin.x = screenFrame.size.width / 4;
+  frame.origin.y = screenFrame.size.height * 4/5;
+  frame.size.width = screenFrame.size.width / 2;
+  frame.size.height = 50;
+  
   view = [[JTInfoView alloc] initWithFrame:frame];
 
   view.text = @"test";
   view.isAnimationEnabled = YES;
+//  view.backgroundColor = [UIColor orangeColor];
+  view.appearingDuration = 0.5f;
+  view.disappearingDuration = 0.5f;
   
   [self.view addSubview:view];
   
