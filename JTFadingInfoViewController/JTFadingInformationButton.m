@@ -27,14 +27,15 @@
   // Initial value for each property
   self.isAnimationEnabled = NO;
   self.backgroundColor = [UIColor colorWithRed:0.f/255.f green:140.f/255.f blue:250.f/255.f alpha:1.0f];
-//  self.textColor = [UIColor whiteColor];
-//  self.textAlignment = NSTextAlignmentCenter;
   self.titleLabel.textColor = [UIColor whiteColor];
   self.titleLabel.textAlignment = NSTextAlignmentCenter;
   self.alpha = 0.0f;
+  self.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+  self.fadeInDirection = JTFadeInDirectionFromBelow;
+  self.fadeOutDirection = JTFadeOutDirectionToBelow;
+  self.animationMovement = 30.0f;
   self.appearingDuration = 1.0f;
   self.disappearingDuration = 1.0f;
-  self.distFrame = frame;
 
   // Add touch behavior
   self.userInteractionEnabled = YES;
@@ -86,13 +87,46 @@
   if (self.isAnimationEnabled) {
     
     NSLog(@"animation appear");
-
-    CGRect appearFrom = self.frame;
-    appearFrom.origin.y += 100.0;
-    self.frame = appearFrom;
     
-    CGRect pos = self.frame;
-    pos.origin.y -= 100.0;
+    CGRect appearFrom = self.frame;
+    CGRect pos;
+    
+    switch (self.fadeInDirection) {
+      case JTFadeInDirectionFromAbove:
+        NSLog(@"JTFadeInDirectionFromBelow");
+        appearFrom.origin.y -= self.animationMovement;
+        self.frame = appearFrom;
+        pos = self.frame;
+        pos.origin.y += self.animationMovement;
+        break;
+        
+      case JTFadeInDirectionFromBelow:
+        NSLog(@"JTFadeInDirectionFromBelow");
+        appearFrom.origin.y += self.animationMovement;
+        self.frame = appearFrom;
+        pos = self.frame;
+        pos.origin.y -= self.animationMovement;
+        break;
+        
+      case JTFadeInDirectionFromLeft:
+        NSLog(@"JTFadeInDirectionFromLeft");
+        appearFrom.origin.x -= self.animationMovement;
+        self.frame = appearFrom;
+        pos = self.frame;
+        pos.origin.x += self.animationMovement;
+        break;
+        
+      case JTFadeInDirectionFromRight:
+        NSLog(@"JTFadeInDirectionFromRight");
+        appearFrom.origin.x += self.animationMovement;
+        self.frame = appearFrom;
+        pos = self.frame;
+        pos.origin.x -= self.animationMovement;
+        break;
+        
+      default:
+        break;
+    }
     
     [UIView animateWithDuration: self.disappearingDuration
                           delay: 0.5f
@@ -127,13 +161,36 @@
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag
 {
   NSLog(@"Animation End");
-  NSLog(@"%@", NSStringFromCGRect(self.distFrame));
 }
 
 - (void)disappearFromSuperview
 {
   CGRect pos = self.frame;
-  pos.origin.y -= 100.0;
+  
+  switch (self.fadeOutDirection) {
+    case JTFadeOutDirectionToAbove:
+      NSLog(@"JTFadeOutDirectionToAbove");
+      pos.origin.y -= self.animationMovement;
+      break;
+      
+    case JTFadeOutDirectionToBelow:
+      NSLog(@"JTFadeOutDirectionToBelow");
+      pos.origin.y += self.animationMovement;
+      break;
+      
+    case JTFadeOutDirectionToLeft:
+      NSLog(@"JTFadeOutDirectionToLeft");
+      pos.origin.x -= self.animationMovement;
+      break;
+      
+    case JTFadeOutDirectionRight:
+      NSLog(@"JTFadeOutDirectionRight");
+      pos.origin.y += self.animationMovement;
+      break;
+      
+    default:
+      break;
+  }
   
   // Do animation if the property selected YES
   if (self.isAnimationEnabled) {

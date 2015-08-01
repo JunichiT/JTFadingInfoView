@@ -10,22 +10,22 @@
 
 #pragma mark - Fade in/out options
 typedef enum {
-  FadeInFromAbove = 1,
-  FadeInFromBelow,
-  FadeInFromLeft,
-  FadeInFromRight
-} FadeInType;
+  JTFadeInDirectionFromAbove = 1,
+  JTFadeInDirectionFromBelow,
+  JTFadeInDirectionFromLeft,
+  JTFadeInDirectionFromRight
+} JTFadeInDirectionType;
 
 typedef enum {
-  FadeOutToAbove = 1,
-  FadeOutToBelow,
-  FadeOutToLeft,
-  FadeOutToRight
-} FadeOutType;
+  JTFadeOutDirectionToAbove = 1,
+  JTFadeOutDirectionToBelow,
+  JTFadeOutDirectionToLeft,
+  JTFadeOutDirectionRight
+} JTFadeOutDirectionType;
 
 typedef enum {
   DisplayDurationInfinity
-} DisplayDurationOption;
+} JTDisplayDurationOption;
 
 @interface JTFadingInformationButton : UIButton
 - (void)appear;
@@ -48,6 +48,11 @@ typedef enum {
 @property float appearingDuration;
 /** A float representing the time the view is disappeared by. */
 @property float disappearingDuration;
-
+/** A float representing how much the view moves during fading in/out. */
+@property float animationMovement;
+/** A JTFadeInType representing from which direction the view appears */
+@property JTFadeInDirectionType fadeInDirection;
+/** A JTFadeInType representing to which direction the view will be disappeared */
+@property JTFadeOutDirectionType fadeOutDirection;
 
 @end

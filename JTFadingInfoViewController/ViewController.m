@@ -55,11 +55,14 @@
   
   infoView = [[JTFadingInformationButton alloc] initWithFrame:frame];
   
-  [infoView setTitle:@"test" forState:UIControlStateNormal];
+  [infoView setTitle:@"View called successfully." forState:UIControlStateNormal];
   infoView.isAnimationEnabled = YES;
   infoView.appearingDuration = 0.5f;
-  infoView.displayDuration = DisplayDurationInfinity;
+  infoView.displayDuration = 3.0f;
   infoView.disappearingDuration = 0.5f;
+  infoView.animationMovement = 100.0f;
+  infoView.fadeInDirection = JTFadeInDirectionFromAbove;
+  infoView.fadeOutDirection = JTFadeOutDirectionToLeft;
   
   [self.view addSubview:infoView];
   //[self appear];
