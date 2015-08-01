@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5669C3941B67D5FE003A2B83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3931B67D5FE003A2B83 /* main.m */; };
-		5669C3971B67D5FE003A2B83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3961B67D5FE003A2B83 /* AppDelegate.m */; };
-		5669C39A1B67D5FE003A2B83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3991B67D5FE003A2B83 /* ViewController.m */; };
-		5669C39F1B67D5FE003A2B83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5669C39E1B67D5FE003A2B83 /* Images.xcassets */; };
-		5669C3A21B67D5FE003A2B83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5669C3A01B67D5FE003A2B83 /* LaunchScreen.xib */; };
-		5669C3AE1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3AD1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m */; };
-		5669C3BD1B67D6E8003A2B83 /* JTFadingInformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3BC1B67D6E8003A2B83 /* JTFadingInformationButton.m */; };
+		56011E751B6D7D4D00A66DB9 /* JTFadingInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E741B6D7D4D00A66DB9 /* JTFadingInfoView.m */; };
+		56011E7A1B6D7D6600A66DB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E771B6D7D6600A66DB9 /* AppDelegate.m */; };
+		56011E7B1B6D7D6600A66DB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E791B6D7D6600A66DB9 /* ViewController.m */; };
+		56011E811B6D7D8400A66DB9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56011E7F1B6D7D8400A66DB9 /* Info.plist */; };
+		56011E821B6D7D8400A66DB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E801B6D7D8400A66DB9 /* main.m */; };
+		56011E881B6D7EC800A66DB9 /* JTFadingInfoViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E831B6D7D9400A66DB9 /* JTFadingInfoViewTests.m */; };
+		56011E891B6D7EF100A66DB9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56011E7C1B6D7D7900A66DB9 /* LaunchScreen.xib */; };
+		56011E8A1B6D7EF800A66DB9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56011E851B6D7D9E00A66DB9 /* Info.plist */; };
+		56011E8F1B6D800B00A66DB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56011E8E1B6D800B00A66DB9 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,20 +29,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5669C38E1B67D5FE003A2B83 /* JTFadingInformationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTFadingInformationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5669C3921B67D5FE003A2B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5669C3931B67D5FE003A2B83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5669C3951B67D5FE003A2B83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5669C3961B67D5FE003A2B83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5669C3981B67D5FE003A2B83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5669C3991B67D5FE003A2B83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5669C39E1B67D5FE003A2B83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5669C3A11B67D5FE003A2B83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5669C3A71B67D5FE003A2B83 /* JTFadingInformationViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTFadingInformationViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5669C3AC1B67D5FE003A2B83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5669C3AD1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTFadingInfoViewControllerTests.m; sourceTree = "<group>"; };
-		5669C3BB1B67D6E8003A2B83 /* JTFadingInformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTFadingInformationButton.h; sourceTree = "<group>"; };
-		5669C3BC1B67D6E8003A2B83 /* JTFadingInformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTFadingInformationButton.m; sourceTree = "<group>"; };
+		56011E731B6D7D4D00A66DB9 /* JTFadingInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTFadingInfoView.h; path = JTFadingInfoView/Class/JTFadingInfoView.h; sourceTree = SOURCE_ROOT; };
+		56011E741B6D7D4D00A66DB9 /* JTFadingInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTFadingInfoView.m; path = JTFadingInfoView/Class/JTFadingInfoView.m; sourceTree = SOURCE_ROOT; };
+		56011E761B6D7D6600A66DB9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JTFadingInfoView/Demo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		56011E771B6D7D6600A66DB9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = JTFadingInfoView/Demo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		56011E781B6D7D6600A66DB9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = JTFadingInfoView/Demo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		56011E791B6D7D6600A66DB9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = JTFadingInfoView/Demo/ViewController.m; sourceTree = SOURCE_ROOT; };
+		56011E7D1B6D7D7900A66DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = JTFadingInfoView/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		56011E7F1B6D7D8400A66DB9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JTFadingInfoView/Info.plist; sourceTree = SOURCE_ROOT; };
+		56011E801B6D7D8400A66DB9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = JTFadingInfoView/main.m; sourceTree = SOURCE_ROOT; };
+		56011E831B6D7D9400A66DB9 /* JTFadingInfoViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTFadingInfoViewTests.m; path = JTFadingInfoViewTests/JTFadingInfoViewTests.m; sourceTree = SOURCE_ROOT; };
+		56011E851B6D7D9E00A66DB9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = JTFadingInfoViewTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		56011E8E1B6D800B00A66DB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = JTFadingInfoView/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		5669C38E1B67D5FE003A2B83 /* JTFadingInfoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTFadingInfoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5669C3A71B67D5FE003A2B83 /* JTFadingInfoViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTFadingInfoViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			children = (
 				5669C3B71B67D64B003A2B83 /* JTFadingInfoView */,
 				5669C3901B67D5FE003A2B83 /* Demo */,
-				5669C3AA1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests */,
+				5669C3AA1B67D5FE003A2B83 /* JTFadingInfoViewTests */,
 				5669C38F1B67D5FE003A2B83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,8 +76,8 @@
 		5669C38F1B67D5FE003A2B83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5669C38E1B67D5FE003A2B83 /* JTFadingInformationView.app */,
-				5669C3A71B67D5FE003A2B83 /* JTFadingInformationViewTests.xctest */,
+				5669C38E1B67D5FE003A2B83 /* JTFadingInfoView.app */,
+				5669C3A71B67D5FE003A2B83 /* JTFadingInfoViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,12 +85,12 @@
 		5669C3901B67D5FE003A2B83 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				5669C3951B67D5FE003A2B83 /* AppDelegate.h */,
-				5669C3961B67D5FE003A2B83 /* AppDelegate.m */,
-				5669C3981B67D5FE003A2B83 /* ViewController.h */,
-				5669C3991B67D5FE003A2B83 /* ViewController.m */,
-				5669C39E1B67D5FE003A2B83 /* Images.xcassets */,
-				5669C3A01B67D5FE003A2B83 /* LaunchScreen.xib */,
+				56011E761B6D7D6600A66DB9 /* AppDelegate.h */,
+				56011E771B6D7D6600A66DB9 /* AppDelegate.m */,
+				56011E781B6D7D6600A66DB9 /* ViewController.h */,
+				56011E791B6D7D6600A66DB9 /* ViewController.m */,
+				56011E7C1B6D7D7900A66DB9 /* LaunchScreen.xib */,
+				56011E8E1B6D800B00A66DB9 /* Images.xcassets */,
 				5669C3911B67D5FE003A2B83 /* Supporting Files */,
 			);
 			name = Demo;
@@ -98,25 +100,26 @@
 		5669C3911B67D5FE003A2B83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5669C3921B67D5FE003A2B83 /* Info.plist */,
-				5669C3931B67D5FE003A2B83 /* main.m */,
+				56011E7F1B6D7D8400A66DB9 /* Info.plist */,
+				56011E801B6D7D8400A66DB9 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5669C3AA1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests */ = {
+		5669C3AA1B67D5FE003A2B83 /* JTFadingInfoViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				5669C3AD1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m */,
+				56011E831B6D7D9400A66DB9 /* JTFadingInfoViewTests.m */,
 				5669C3AB1B67D5FE003A2B83 /* Supporting Files */,
 			);
+			name = JTFadingInfoViewTests;
 			path = JTFadingInfoViewControllerTests;
 			sourceTree = "<group>";
 		};
 		5669C3AB1B67D5FE003A2B83 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5669C3AC1B67D5FE003A2B83 /* Info.plist */,
+				56011E851B6D7D9E00A66DB9 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -124,8 +127,8 @@
 		5669C3B71B67D64B003A2B83 /* JTFadingInfoView */ = {
 			isa = PBXGroup;
 			children = (
-				5669C3BB1B67D6E8003A2B83 /* JTFadingInformationButton.h */,
-				5669C3BC1B67D6E8003A2B83 /* JTFadingInformationButton.m */,
+				56011E731B6D7D4D00A66DB9 /* JTFadingInfoView.h */,
+				56011E741B6D7D4D00A66DB9 /* JTFadingInfoView.m */,
 			);
 			name = JTFadingInfoView;
 			path = JTFadingInfoViewController;
@@ -134,9 +137,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5669C38D1B67D5FE003A2B83 /* JTFadingInformationView */ = {
+		5669C38D1B67D5FE003A2B83 /* JTFadingInfoView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5669C3B11B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInformationView" */;
+			buildConfigurationList = 5669C3B11B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInfoView" */;
 			buildPhases = (
 				5669C38A1B67D5FE003A2B83 /* Sources */,
 				5669C38B1B67D5FE003A2B83 /* Frameworks */,
@@ -146,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = JTFadingInformationView;
+			name = JTFadingInfoView;
 			productName = JTFadingInfoViewController;
-			productReference = 5669C38E1B67D5FE003A2B83 /* JTFadingInformationView.app */;
+			productReference = 5669C38E1B67D5FE003A2B83 /* JTFadingInfoView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5669C3A61B67D5FE003A2B83 /* JTFadingInformationViewTests */ = {
+		5669C3A61B67D5FE003A2B83 /* JTFadingInfoViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5669C3B41B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInformationViewTests" */;
+			buildConfigurationList = 5669C3B41B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInfoViewTests" */;
 			buildPhases = (
 				5669C3A31B67D5FE003A2B83 /* Sources */,
 				5669C3A41B67D5FE003A2B83 /* Frameworks */,
@@ -164,9 +167,9 @@
 			dependencies = (
 				5669C3A91B67D5FE003A2B83 /* PBXTargetDependency */,
 			);
-			name = JTFadingInformationViewTests;
+			name = JTFadingInfoViewTests;
 			productName = JTFadingInfoViewControllerTests;
-			productReference = 5669C3A71B67D5FE003A2B83 /* JTFadingInformationViewTests.xctest */;
+			productReference = 5669C3A71B67D5FE003A2B83 /* JTFadingInfoViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -187,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5669C3891B67D5FE003A2B83 /* Build configuration list for PBXProject "JTFadingInformationView" */;
+			buildConfigurationList = 5669C3891B67D5FE003A2B83 /* Build configuration list for PBXProject "JTFadingInfoView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -200,8 +203,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5669C38D1B67D5FE003A2B83 /* JTFadingInformationView */,
-				5669C3A61B67D5FE003A2B83 /* JTFadingInformationViewTests */,
+				5669C38D1B67D5FE003A2B83 /* JTFadingInfoView */,
+				5669C3A61B67D5FE003A2B83 /* JTFadingInfoViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,8 +214,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5669C3A21B67D5FE003A2B83 /* LaunchScreen.xib in Resources */,
-				5669C39F1B67D5FE003A2B83 /* Images.xcassets in Resources */,
+				56011E811B6D7D8400A66DB9 /* Info.plist in Resources */,
+				56011E8F1B6D800B00A66DB9 /* Images.xcassets in Resources */,
+				56011E891B6D7EF100A66DB9 /* LaunchScreen.xib in Resources */,
+				56011E8A1B6D7EF800A66DB9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,10 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5669C39A1B67D5FE003A2B83 /* ViewController.m in Sources */,
-				5669C3BD1B67D6E8003A2B83 /* JTFadingInformationButton.m in Sources */,
-				5669C3971B67D5FE003A2B83 /* AppDelegate.m in Sources */,
-				5669C3941B67D5FE003A2B83 /* main.m in Sources */,
+				56011E821B6D7D8400A66DB9 /* main.m in Sources */,
+				56011E751B6D7D4D00A66DB9 /* JTFadingInfoView.m in Sources */,
+				56011E7B1B6D7D6600A66DB9 /* ViewController.m in Sources */,
+				56011E7A1B6D7D6600A66DB9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5669C3AE1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m in Sources */,
+				56011E881B6D7EC800A66DB9 /* JTFadingInfoViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,16 +255,16 @@
 /* Begin PBXTargetDependency section */
 		5669C3A91B67D5FE003A2B83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5669C38D1B67D5FE003A2B83 /* JTFadingInformationView */;
+			target = 5669C38D1B67D5FE003A2B83 /* JTFadingInfoView */;
 			targetProxy = 5669C3A81B67D5FE003A2B83 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5669C3A01B67D5FE003A2B83 /* LaunchScreen.xib */ = {
+		56011E7C1B6D7D7900A66DB9 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5669C3A11B67D5FE003A2B83 /* Base */,
+				56011E7D1B6D7D7900A66DB9 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -349,10 +354,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JTFadingInfoViewController/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/JTFadingInfoViewTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = JTFadingInformationView;
+				PRODUCT_NAME = JTFadingInfoView;
 			};
 			name = Debug;
 		};
@@ -360,10 +366,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = JTFadingInfoViewController/Info.plist;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "$(SRCROOT)/JTFadingInfoViewTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = JTFadingInformationView;
+				PRODUCT_NAME = JTFadingInfoView;
 			};
 			name = Release;
 		};
@@ -379,10 +386,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = JTFadingInfoViewControllerTests/Info.plist;
+				INFOPLIST_FILE = JTFadingInfoViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = JTFadingInformationViewTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTFadingInformationView.app/JTFadingInformationView";
+				PRODUCT_NAME = JTFadingInfoViewTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTFadingInfoView.app/JTFadingInfoView";
 			};
 			name = Debug;
 		};
@@ -394,17 +401,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = JTFadingInfoViewControllerTests/Info.plist;
+				INFOPLIST_FILE = JTFadingInfoViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = JTFadingInformationViewTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTFadingInformationView.app/JTFadingInformationView";
+				PRODUCT_NAME = JTFadingInfoViewTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTFadingInfoView.app/JTFadingInfoView";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5669C3891B67D5FE003A2B83 /* Build configuration list for PBXProject "JTFadingInformationView" */ = {
+		5669C3891B67D5FE003A2B83 /* Build configuration list for PBXProject "JTFadingInfoView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5669C3AF1B67D5FE003A2B83 /* Debug */,
@@ -413,7 +420,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5669C3B11B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInformationView" */ = {
+		5669C3B11B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInfoView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5669C3B21B67D5FE003A2B83 /* Debug */,
@@ -422,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5669C3B41B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInformationViewTests" */ = {
+		5669C3B41B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInfoViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5669C3B51B67D5FE003A2B83 /* Debug */,

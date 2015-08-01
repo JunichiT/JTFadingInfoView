@@ -1,6 +1,6 @@
 //
-//  JTFadingInformationButton.h
-//  JTFadingInformationButton
+//  JTFadingInfoView.h
+//  JTFadingInfoView
 //
 //  Created by Junichi Tsurukawa on 2015/07/29.
 //
@@ -48,11 +48,31 @@ typedef enum {
   JTDisplayDurationInfinity
 } JTDisplayDurationOption;
 
-@interface JTFadingInformationButton : UIButton
-- (void)appear;
-- (void)disappearFromSuperview;
-- (void)appearWithDuration: (NSTimeInterval)duration;
+@interface JTFadingInfoView : UIButton
+#pragma mark - Initializer
+/**
+ *  Initializes a JTFadingInfoView with a frame and label to be shown on.
+ *
+ *  @param frame A CGRect value for this view's frame
+ *  @param label A NSString value to use as this view's label
+ *
+ *  @return A JTFadingInfoView with frame and label
+ */
 - (id)initWithFrame:(CGRect)frame label:(NSString *)label;
+
+#pragma mark - Instance Methods
+/**
+ *  appearWithDuration:duration has a role to display JTFadingInfoView for specified time
+ *
+ *  @param duration A NSTimeInterval value as a duration time to display JTFadingInfoView
+ */
+- (void)appearWithDuration: (NSTimeInterval)duration;
+
+/**
+ *  disappearFromSuperview has a role to disappear JTFadingInfoView with fading animation.
+ *
+ */
+- (void)disappearFromSuperview;
 
 #pragma mark - Properties
 #pragma Shadow

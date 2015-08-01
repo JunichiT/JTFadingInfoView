@@ -1,6 +1,6 @@
 //
-//  JTFadingInfoViewControllerTests.m
-//  JTFadingInfoViewControllerTests
+//  JTFadingInfoViewTests.m
+//  JTFadingInfoViewTests
 //
 //  Created by DCL_JT on 2015/07/29.
 //  Copyright (c) 2015年 Junichi Tsurukawa. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface JTFadingInfoViewControllerTests : XCTestCase
+@interface JTFadingInfoViewTests : XCTestCase
 
 @end
 
-@implementation JTFadingInfoViewControllerTests
+@implementation JTFadingInfoViewTests
 
 - (void)setUp {
     [super setUp];

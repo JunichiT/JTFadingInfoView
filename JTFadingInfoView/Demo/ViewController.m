@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "JTFadingInformationButton.h"
+#import "JTFadingInfoView.h"
 
 @interface ViewController (){
-  JTFadingInformationButton *infoView;
+  JTFadingInfoView *infoView;
   UILabel *subLabel;
 }
 
@@ -22,8 +22,6 @@
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   
-  UITableView *tableview = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  [self.view addSubview:tableview];
   
   UIButton *buttonAppear = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 50, 50)];
   buttonAppear.backgroundColor = [UIColor greenColor];
@@ -49,24 +47,24 @@
   CGRect screenFrame = [[UIScreen mainScreen] bounds];
   CGRect frame = CGRectZero;
   frame.origin.x = screenFrame.size.width / 4;
-  frame.origin.y = screenFrame.size.height * 4/5;
+  frame.origin.y = screenFrame.size.height * 2/5;
   frame.size.width = screenFrame.size.width / 2;
   frame.size.height = 50;
   
   NSString *label = @"Label loaded";
-  infoView = [[JTFadingInformationButton alloc] initWithFrame:frame label:label];
+  infoView = [[JTFadingInfoView alloc] initWithFrame:frame label:label];
   
 //  [infoView setTitle:@"View called successfully." forState:UIControlStateNormal];
   infoView.isAnimationEnabled = YES;
-  infoView.appearingDuration = 1.5f;
-  infoView.displayDuration = JTDisplayDurationInfinity;
-  infoView.disappearingDuration = 1.5f;
+  infoView.appearingDuration = 0.5f;
+  infoView.displayDuration = 3.0f;
+  infoView.disappearingDuration = 0.5f;
   infoView.animationMovement = 40.0f;
-  infoView.fadeInDirection = JTFadeOutDirectionFromPresentPosition;
-  infoView.fadeOutDirection = JTFadeOutDirectionToPresentPosition;
+  infoView.fadeInDirection = JTFadeInDirectionFromBelow;
+  infoView.fadeOutDirection = JTFadeOutDirectionToBelow;
   
   [self.view addSubview:infoView];
-  //[self appear];
+
 }
 
 - (void)disappear
