@@ -57,12 +57,12 @@
   
   [infoView setTitle:@"View called successfully." forState:UIControlStateNormal];
   infoView.isAnimationEnabled = YES;
-  infoView.appearingDuration = 0.5f;
-  infoView.displayDuration = 3.0f;
-  infoView.disappearingDuration = 0.5f;
-  infoView.animationMovement = 100.0f;
-  infoView.fadeInDirection = JTFadeInDirectionFromAbove;
-  infoView.fadeOutDirection = JTFadeOutDirectionToLeft;
+  infoView.appearingDuration = 1.0f;
+  infoView.displayDuration = JTDisplayDurationInfinity;
+  infoView.disappearingDuration = 1.0f;
+  infoView.animationMovement = 40.0f;
+  infoView.fadeInDirection = JTFadeOutDirectionFromPresentPosition;
+  infoView.fadeOutDirection = JTFadeOutDirectionToPresentPosition;
   
   [self.view addSubview:infoView];
   //[self appear];

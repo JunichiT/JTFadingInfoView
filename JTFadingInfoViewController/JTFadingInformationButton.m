@@ -124,6 +124,12 @@
         pos.origin.x -= self.animationMovement;
         break;
         
+      case JTFadeOutDirectionFromPresentPosition:
+        NSLog(@"JTFadeOutDirectionFromPresentPosition");
+        self.frame = appearFrom;
+        pos = self.frame;
+        break;
+        
       default:
         break;
     }
@@ -147,7 +153,7 @@
 - (void)appearWithDuration: (NSTimeInterval)duration
 {
   [self appear];
-  if ( duration > 0 || duration != DisplayDurationInfinity) {
+  if ( duration > 0 || duration != JTDisplayDurationInfinity) {
     [self performSelector:@selector(disappearFromSuperview) withObject:nil afterDelay:duration];
   }
 }
@@ -183,9 +189,13 @@
       pos.origin.x -= self.animationMovement;
       break;
       
-    case JTFadeOutDirectionRight:
-      NSLog(@"JTFadeOutDirectionRight");
+    case JTFadeOutDirectionToRight:
+      NSLog(@"JTFadeOutDirectionToRight");
       pos.origin.y += self.animationMovement;
+      break;
+      
+    case JTFadeOutDirectionToPresentPosition:
+      NSLog(@"JTFadeOutDirectionToPresentPosition");
       break;
       
     default:

@@ -13,18 +13,20 @@ typedef enum {
   JTFadeInDirectionFromAbove = 1,
   JTFadeInDirectionFromBelow,
   JTFadeInDirectionFromLeft,
-  JTFadeInDirectionFromRight
+  JTFadeInDirectionFromRight,
+  JTFadeOutDirectionFromPresentPosition
 } JTFadeInDirectionType;
 
 typedef enum {
   JTFadeOutDirectionToAbove = 1,
   JTFadeOutDirectionToBelow,
   JTFadeOutDirectionToLeft,
-  JTFadeOutDirectionRight
+  JTFadeOutDirectionToRight,
+  JTFadeOutDirectionToPresentPosition
 } JTFadeOutDirectionType;
 
 typedef enum {
-  DisplayDurationInfinity
+  JTDisplayDurationInfinity
 } JTDisplayDurationOption;
 
 @interface JTFadingInformationButton : UIButton
