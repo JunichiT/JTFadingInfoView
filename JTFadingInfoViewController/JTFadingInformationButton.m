@@ -69,7 +69,7 @@
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
   NSLog(@"willMoveToSuperview called");
-  [self appear];
+  [self appearWithDuration:self.displayDuration];
 }
 
 - (void)willRemoveSubview:(UIView *)subview
@@ -107,6 +107,14 @@
   }
   else {
     self.alpha = 1.0f;
+  }
+}
+
+- (void)appearWithDuration: (NSTimeInterval)duration
+{
+  [self appear];
+  if ( duration > 0 || duration != DisplayDurationInfinity) {
+    [self performSelector:@selector(disappearFromSuperview) withObject:nil afterDelay:duration];
   }
 }
 

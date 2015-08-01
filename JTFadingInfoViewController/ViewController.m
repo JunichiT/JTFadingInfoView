@@ -7,11 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "JTFadingInfoViewController.h"
 #import "JTFadingInformationButton.h"
 
 @interface ViewController (){
-  JTFadingInformationButton *infoLabel;
+  JTFadingInformationButton *infoView;
   UILabel *subLabel;
 }
 
@@ -54,22 +53,22 @@
   frame.size.width = screenFrame.size.width / 2;
   frame.size.height = 50;
   
-  infoLabel = [[JTFadingInformationButton alloc] initWithFrame:frame];
+  infoView = [[JTFadingInformationButton alloc] initWithFrame:frame];
   
-//  infoLabel.titleLabel.text = @"test";
-  [infoLabel setTitle:@"test" forState:UIControlStateNormal];
-  infoLabel.isAnimationEnabled = YES;
-  infoLabel.appearingDuration = 0.5f;
-  infoLabel.disappearingDuration = 0.5f;
+  [infoView setTitle:@"test" forState:UIControlStateNormal];
+  infoView.isAnimationEnabled = YES;
+  infoView.appearingDuration = 0.5f;
+  infoView.displayDuration = DisplayDurationInfinity;
+  infoView.disappearingDuration = 0.5f;
   
-  [self.view addSubview:infoLabel];
+  [self.view addSubview:infoView];
   //[self appear];
 }
 
 - (void)disappear
 {
   NSLog(@"in function disappear!");
-  [infoLabel disappearFromSuperview];
+  [infoView disappearFromSuperview];
   
 }
 

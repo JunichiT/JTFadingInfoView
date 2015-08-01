@@ -23,10 +23,14 @@ typedef enum {
   FadeOutToRight
 } FadeOutType;
 
+typedef enum {
+  DisplayDurationInfinity
+} DisplayDurationOption;
 
 @interface JTFadingInformationButton : UIButton
 - (void)appear;
 - (void)disappearFromSuperview;
+- (void)appearWithDuration: (NSTimeInterval)duration;
 
 #pragma mark - Properties
 #pragma Shadow
