@@ -33,6 +33,7 @@ typedef enum {
 - (void)appear;
 - (void)disappearFromSuperview;
 - (void)appearWithDuration: (NSTimeInterval)duration;
+- (id)initWithFrame:(CGRect)frame label:(NSString *)label;
 
 #pragma mark - Properties
 #pragma Shadow
@@ -44,11 +45,11 @@ typedef enum {
 #pragma Animatoins
 /** Frame */
 @property CGRect distFrame;
-/** A float represeting the time for displaying this view itself. If 0, view will not disappear */
+/** A float represeting the time for displaying this view itself (second). If <= 0, view will not disappear */
 @property float displayDuration;
-/** A float representing the time the view is appeared by. */
+/** A float representing the time the view is appeared by (second). */
 @property float appearingDuration;
-/** A float representing the time the view is disappeared by. */
+/** A float representing the time the view is disappeared by (second). */
 @property float disappearingDuration;
 /** A float representing how much the view moves during fading in/out. */
 @property float animationMovement;

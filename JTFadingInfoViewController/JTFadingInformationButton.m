@@ -18,11 +18,18 @@
 @implementation JTFadingInformationButton
 
 
+- (id)initWithFrame:(CGRect)frame label:(NSString *)label
+{
+  self = [self initWithFrame:frame];
+  [self setTitle:label forState:UIControlStateNormal];
+  return self;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
   self = [super initWithFrame:frame];
   
-  NSLog(@"%@", NSStringFromCGRect(self.frame));
+  //NSLog(@"%@", NSStringFromCGRect(self.frame));
   
   // Initial value for each property
   self.isAnimationEnabled = NO;
@@ -60,40 +67,34 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
   UITouch *touch = [[event allTouches] anyObject];
-//  NSLog(@"tap pos: %@", touch.)
+  //NSLog(@"tap pos: %@", touch.)
   if ( touch.view.tag == self.tag ){
-    NSLog(@"Do STG");
+    //NSLog(@"Do STG");
     [self disappearFromSuperview];
   }
 }
 
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
-  NSLog(@"willMoveToSuperview called");
+  //NSLog(@"willMoveToSuperview called");
   [self appearWithDuration:self.displayDuration];
-}
-
-- (void)willRemoveSubview:(UIView *)subview
-{
-  NSLog(@"willRemoveSubview called");
-
 }
 
 - (void)appear
 {
   // Animation
-  NSLog(@"%d", self.isAnimationEnabled);
+  //NSLog(@"%d", self.isAnimationEnabled);
   // Do animation if the property selected YES
   if (self.isAnimationEnabled) {
     
-    NSLog(@"animation appear");
+    //NSLog(@"animation appear");
     
     CGRect appearFrom = self.frame;
     CGRect pos;
     
     switch (self.fadeInDirection) {
       case JTFadeInDirectionFromAbove:
-        NSLog(@"JTFadeInDirectionFromBelow");
+        //NSLog(@"JTFadeInDirectionFromBelow");
         appearFrom.origin.y -= self.animationMovement;
         self.frame = appearFrom;
         pos = self.frame;
@@ -101,7 +102,7 @@
         break;
         
       case JTFadeInDirectionFromBelow:
-        NSLog(@"JTFadeInDirectionFromBelow");
+        //NSLog(@"JTFadeInDirectionFromBelow");
         appearFrom.origin.y += self.animationMovement;
         self.frame = appearFrom;
         pos = self.frame;
@@ -109,7 +110,7 @@
         break;
         
       case JTFadeInDirectionFromLeft:
-        NSLog(@"JTFadeInDirectionFromLeft");
+        //NSLog(@"JTFadeInDirectionFromLeft");
         appearFrom.origin.x -= self.animationMovement;
         self.frame = appearFrom;
         pos = self.frame;
@@ -117,7 +118,7 @@
         break;
         
       case JTFadeInDirectionFromRight:
-        NSLog(@"JTFadeInDirectionFromRight");
+        //NSLog(@"JTFadeInDirectionFromRight");
         appearFrom.origin.x += self.animationMovement;
         self.frame = appearFrom;
         pos = self.frame;
@@ -125,7 +126,7 @@
         break;
         
       case JTFadeOutDirectionFromPresentPosition:
-        NSLog(@"JTFadeOutDirectionFromPresentPosition");
+        //NSLog(@"JTFadeOutDirectionFromPresentPosition");
         self.frame = appearFrom;
         pos = self.frame;
         break;
@@ -134,7 +135,7 @@
         break;
     }
     
-    [UIView animateWithDuration: self.disappearingDuration
+    [UIView animateWithDuration: self.appearingDuration
                           delay: 0.5f
                         options: UIViewAnimationOptionLayoutSubviews
                      animations: ^{
@@ -142,7 +143,7 @@
                        self.frame = pos;
                      }
                      completion:^(BOOL finished) {
-                       NSLog(@"complete");
+                       //NSLog(@"complete");
                      }];
   }
   else {
@@ -160,13 +161,13 @@
 
 - (void)animationDidStart:(CAAnimation *)theAnimation
 {
-  NSLog(@"Animation Begin");
+  //NSLog(@"Animation Begin");
 }
 
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag
 {
-  NSLog(@"Animation End");
+  //NSLog(@"Animation End");
 }
 
 - (void)disappearFromSuperview
@@ -175,27 +176,27 @@
   
   switch (self.fadeOutDirection) {
     case JTFadeOutDirectionToAbove:
-      NSLog(@"JTFadeOutDirectionToAbove");
+      //NSLog(@"JTFadeOutDirectionToAbove");
       pos.origin.y -= self.animationMovement;
       break;
       
     case JTFadeOutDirectionToBelow:
-      NSLog(@"JTFadeOutDirectionToBelow");
+      //NSLog(@"JTFadeOutDirectionToBelow");
       pos.origin.y += self.animationMovement;
       break;
       
     case JTFadeOutDirectionToLeft:
-      NSLog(@"JTFadeOutDirectionToLeft");
+      //NSLog(@"JTFadeOutDirectionToLeft");
       pos.origin.x -= self.animationMovement;
       break;
       
     case JTFadeOutDirectionToRight:
-      NSLog(@"JTFadeOutDirectionToRight");
+      //NSLog(@"JTFadeOutDirectionToRight");
       pos.origin.y += self.animationMovement;
       break;
       
     case JTFadeOutDirectionToPresentPosition:
-      NSLog(@"JTFadeOutDirectionToPresentPosition");
+      //NSLog(@"JTFadeOutDirectionToPresentPosition");
       break;
       
     default:
@@ -212,7 +213,7 @@
                        self.frame = pos;
                      }
                      completion:^(BOOL finished) {
-                       NSLog(@"complete rem");
+                       //NSLog(@"complete rem");
                        [self removeFromSuperview];
                      }];
   }

@@ -53,13 +53,14 @@
   frame.size.width = screenFrame.size.width / 2;
   frame.size.height = 50;
   
-  infoView = [[JTFadingInformationButton alloc] initWithFrame:frame];
+  NSString *label = @"Label loaded";
+  infoView = [[JTFadingInformationButton alloc] initWithFrame:frame label:label];
   
-  [infoView setTitle:@"View called successfully." forState:UIControlStateNormal];
+//  [infoView setTitle:@"View called successfully." forState:UIControlStateNormal];
   infoView.isAnimationEnabled = YES;
-  infoView.appearingDuration = 1.0f;
+  infoView.appearingDuration = 1.5f;
   infoView.displayDuration = JTDisplayDurationInfinity;
-  infoView.disappearingDuration = 1.0f;
+  infoView.disappearingDuration = 1.5f;
   infoView.animationMovement = 40.0f;
   infoView.fadeInDirection = JTFadeOutDirectionFromPresentPosition;
   infoView.fadeOutDirection = JTFadeOutDirectionToPresentPosition;
