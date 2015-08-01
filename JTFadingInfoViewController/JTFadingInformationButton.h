@@ -1,9 +1,9 @@
 //
-//  JTInfoView.h
-//  JTFadingInfoViewController
+//  JTFadingInformationButton.h
+//  JTFadingInformationButton
 //
-//  Created by DCL_JT on 2015/07/29.
-//  Copyright (c) 2015年 Junichi Tsurukawa. All rights reserved.
+//  Created by Junichi Tsurukawa on 2015/07/29.
+//  Copyright (c) 2015 Junichi Tsurukawa. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -24,7 +24,9 @@ typedef enum {
 } FadeOutType;
 
 
-@interface JTInfoView : UILabel
+@interface JTFadingInformationButton : UIButton
+- (void)appear;
+- (void)disappearFromSuperview;
 
 #pragma mark - Properties
 #pragma Shadow

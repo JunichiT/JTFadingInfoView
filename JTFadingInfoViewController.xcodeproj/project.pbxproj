@@ -14,7 +14,7 @@
 		5669C3A21B67D5FE003A2B83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5669C3A01B67D5FE003A2B83 /* LaunchScreen.xib */; };
 		5669C3AE1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3AD1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m */; };
 		5669C3BA1B67D6B5003A2B83 /* JTFadingInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3B91B67D6B5003A2B83 /* JTFadingInfoViewController.m */; };
-		5669C3BD1B67D6E8003A2B83 /* JTInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3BC1B67D6E8003A2B83 /* JTInfoView.m */; };
+		5669C3BD1B67D6E8003A2B83 /* JTFadingInformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C3BC1B67D6E8003A2B83 /* JTFadingInformationButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		5669C3AD1B67D5FE003A2B83 /* JTFadingInfoViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTFadingInfoViewControllerTests.m; sourceTree = "<group>"; };
 		5669C3B81B67D6B5003A2B83 /* JTFadingInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTFadingInfoViewController.h; sourceTree = "<group>"; };
 		5669C3B91B67D6B5003A2B83 /* JTFadingInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTFadingInfoViewController.m; sourceTree = "<group>"; };
-		5669C3BB1B67D6E8003A2B83 /* JTInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTInfoView.h; sourceTree = "<group>"; };
-		5669C3BC1B67D6E8003A2B83 /* JTInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTInfoView.m; sourceTree = "<group>"; };
+		5669C3BB1B67D6E8003A2B83 /* JTFadingInformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTFadingInformationButton.h; sourceTree = "<group>"; };
+		5669C3BC1B67D6E8003A2B83 /* JTFadingInformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTFadingInformationButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +129,8 @@
 			children = (
 				5669C3B81B67D6B5003A2B83 /* JTFadingInfoViewController.h */,
 				5669C3B91B67D6B5003A2B83 /* JTFadingInfoViewController.m */,
-				5669C3BB1B67D6E8003A2B83 /* JTInfoView.h */,
-				5669C3BC1B67D6E8003A2B83 /* JTInfoView.m */,
+				5669C3BB1B67D6E8003A2B83 /* JTFadingInformationButton.h */,
+				5669C3BC1B67D6E8003A2B83 /* JTFadingInformationButton.m */,
 			);
 			path = JTFadingInfoViewController;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			files = (
 				5669C39A1B67D5FE003A2B83 /* ViewController.m in Sources */,
 				5669C3BA1B67D6B5003A2B83 /* JTFadingInfoViewController.m in Sources */,
-				5669C3BD1B67D6E8003A2B83 /* JTInfoView.m in Sources */,
+				5669C3BD1B67D6E8003A2B83 /* JTFadingInformationButton.m in Sources */,
 				5669C3971B67D5FE003A2B83 /* AppDelegate.m in Sources */,
 				5669C3941B67D5FE003A2B83 /* main.m in Sources */,
 			);
@@ -425,6 +425,7 @@
 				5669C3B31B67D5FE003A2B83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5669C3B41B67D5FE003A2B83 /* Build configuration list for PBXNativeTarget "JTFadingInfoViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +434,7 @@
 				5669C3B61B67D5FE003A2B83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

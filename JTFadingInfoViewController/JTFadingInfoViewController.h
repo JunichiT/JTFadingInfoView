@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JTInfoView.h"
+#import "JTFadingInformationButton.h"
 
 #pragma mark - Fade in/out options
 //typedef enum {
@@ -28,7 +28,7 @@
 
 - (void)showSubTitle:(NSString *)subtitle;
 - (void)rem;
-@property (nonatomic, strong)   JTInfoView *subLabel;
+@property (nonatomic, strong)   JTFadingInformationButton *subLabel;
 
 #pragma mark - Functions
 /*
