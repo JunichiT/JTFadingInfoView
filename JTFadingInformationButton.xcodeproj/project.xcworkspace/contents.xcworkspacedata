@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JTFadingInfoViewController.xcodeproj">
+      location = "self:JTFadingInformationButton.xcodeproj">
    </FileRef>
 </Workspace>
