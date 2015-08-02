@@ -52,6 +52,7 @@
   
   // Initial value for each property
   self.isAnimationEnabled = YES;
+  self.isShadowEnabled = YES;
   self.backgroundColor = [UIColor colorWithRed:0.f/255.f green:140.f/255.f blue:250.f/255.f alpha:1.0f];
   self.titleLabel.textColor = [UIColor whiteColor];
   self.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -61,24 +62,12 @@
   self.fadeOutDirection = JTFadeOutDirectionToBelow;
   self.animationMovement = 30.0f;
   self.appearingDuration = 1.0f;
-  self.displayDuration = JTDisplayDurationInfinity;
+  self.displayDuration = 3.0f;
   self.disappearingDuration = 1.0f;
 
   // Add touch behavior
   self.userInteractionEnabled = YES;
   self.tag = 100;
-
-  // Add shadow layer like material design
-  self.layer.cornerRadius = 3.0f;
-  CALayer *caLayer = self.layer;
-  caLayer.frame = self.frame;
-  caLayer.shadowRadius = 3.0f;
-  caLayer.shadowOpacity = 0.4f;
-  caLayer.shadowOffset = CGSizeMake(0.0f, 3.0f);
-  caLayer.shouldRasterize = YES;
-  // retina screen resolution
-  [caLayer setRasterizationScale:[[UIScreen mainScreen] scale]];
-  [caLayer setShouldRasterize:YES];
   
   return self;
 }
@@ -104,6 +93,22 @@
 // appear behavior with animation
 - (void)appear
 {
+  // Corner Radius
+  self.layer.cornerRadius = 3.0f;
+  
+  // Add shadow layer like material design
+  if (self.isShadowEnabled) {
+    CALayer *caLayer = self.layer;
+    caLayer.frame = self.frame;
+    caLayer.shadowRadius = 3.0f;
+    caLayer.shadowOpacity = 0.4f;
+    caLayer.shadowOffset = CGSizeMake(0.0f, 3.0f);
+    caLayer.shouldRasterize = YES;
+    // retina screen resolution
+    [caLayer setRasterizationScale:[[UIScreen mainScreen] scale]];
+    [caLayer setShouldRasterize:YES];
+  }
+  
   // Animation
   //NSLog(@"%d", self.isAnimationEnabled);
   // Do animation if the property selected YES
@@ -184,17 +189,6 @@
   if ( duration > 0 || duration != JTDisplayDurationInfinity) {
     [self performSelector:@selector(disappearFromSuperview) withObject:nil afterDelay:duration];
   }
-}
-
-- (void)animationDidStart:(CAAnimation *)theAnimation
-{
-  //NSLog(@"Animation Begin");
-}
-
-
-- (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag
-{
-  //NSLog(@"Animation End");
 }
 
 // disappear behavior with animation

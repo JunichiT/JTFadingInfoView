@@ -82,8 +82,6 @@ typedef enum {
 @property BOOL isAnimationEnabled;
 
 #pragma Animatoins
-/** Frame */
-@property CGRect distFrame;
 /** A float represeting the time for displaying this view itself (second). If <= 0, view will not disappear */
 @property float displayDuration;
 /** A float representing the time the view is appeared by (second). */
