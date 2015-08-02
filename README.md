@@ -7,7 +7,8 @@ Using this, you can implement short in-app notification such as login success/fa
  
 ## Installation
 JTFadingInfoView is available on CocoaPods.
-You can use this library by adding the following command onto your Podfile
+
+You can use this library by adding the following command onto your Podfile:
 
 ```ruby
 pod "JTFadingInfoView"
@@ -29,10 +30,11 @@ The simplest setup:
 ![Screen shot](Docs/simple.gif)
 
 ### Customize Behaviors
-JTFadingIfoView has parameters to customize behaviors as you like
+JTFadingInfoView has parameters to customize behaviors as you like:
 
 ```objective-c
-/** A float represeting the time for displaying this view itself (second). If <= 0, view will not disappear */
+/** A float represeting the time for displaying this view itself (second).
+/** If <= 0, view will not disappear */
 @property float displayDuration;
 /** A float representing the time the view is appeared by (second). */
 @property float appearingDuration;
