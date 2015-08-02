@@ -154,7 +154,7 @@
         break;
         
       case JTFadeInDirectionFromPresentPosition:
-        //NSLog(@"JTFadeInDirectionFromPresentPosition");
+        //NSLog(@"JTFadeOutDirectionFromPresentPosition");
         self.frame = appearFrom;
         pos = self.frame;
         break;
