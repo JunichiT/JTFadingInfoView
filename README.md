@@ -26,7 +26,7 @@ The simplest setup:
 ```
 
 
-![Screen shot](docs/simple.gif)
+![Screen shot](Docs/simple.gif)
 
 ### Customize Behaviors
 JTFadingIfoView has parameters to customize behaviors as you like
