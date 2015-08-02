@@ -9,10 +9,10 @@
 
 Pod::Spec.new do |s|
   s.name             = "JTFadingInfoView"
-  s.version          = “1.0.0”
-  s.summary          = "A UIButton-based view with fade in/out animation features.”
+  s.version          = "1.0.0"
+  s.summary          = "A UIButton-based view with fade in/out animation features."
   s.homepage         = "https://github.com/JunichiT/JTFadingInfoView"
-  s.screenshots     = "https://raw.githubusercontent.com/JunichiT/JTFadingInfoView/master/Docs/simple.gif"
+  s.screenshots      = "https://raw.githubusercontent.com/JunichiT/JTFadingInfoView/master/Docs/simple.gif"
   s.license          = 'MIT'
   s.author           = { "JunichiTsurukawa" => "j.tsurukawa@gmail.com" }
   s.source           = { :git => "https://github.com/JunichiT/JTFadingInfoView.git", :tag => s.version.to_s }
