@@ -33,7 +33,7 @@ typedef enum {
   JTFadeInDirectionFromBelow,
   JTFadeInDirectionFromLeft,
   JTFadeInDirectionFromRight,
-  JTFadeInDirectionFromPresentPosition
+  JTFadeOutDirectionFromPresentPosition
 } JTFadeInDirectionType;
 
 typedef enum {

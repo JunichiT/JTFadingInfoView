@@ -153,8 +153,8 @@
         pos.origin.x -= self.animationMovement;
         break;
         
-      case JTFadeInDirectionFromPresentPosition:
-        //NSLog(@"JTFadeOutDirectionFromPresentPosition");
+      case JTFadeOutDirectionFromPresentPosition:
+        //NSLog(@"JTFadeInDirectionFromPresentPosition");
         self.frame = appearFrom;
         pos = self.frame;
         break;
