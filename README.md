@@ -52,6 +52,9 @@ JTFadingInfoView has parameters to customize behaviors as you like:
 ### 1.0.0
 - First release 
 
+### 1.0.1
+- Bug Fix
+
 
 ## Requirements
 iOS 7.0 or later
