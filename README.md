@@ -1,7 +1,11 @@
 # JTFadingInfoView
 
+[![Version](https://img.shields.io/cocoapods/v/JTFadingInfoView.svg?style=flat)](http://cocoadocs.org/docsets/JTFadingInfoView)
+[![License](https://img.shields.io/cocoapods/l/JTFadingInfoView.svg?style=flat)](http://cocoadocs.org/docsets/JTFadingInfoView)
+[![Platform](https://img.shields.io/cocoapods/p/JTFadingInfoView.svg?style=flat)](http://cocoadocs.org/docsets/JTFadingInfoView)
+
 ## Overview
-`JTFadingInfoView` is a UIButton-based view with fade in/out animation features.
+`JTFadingInfoView` is a material designed style UIButton-based view with fade in/out animation features.
 
 Using this, you can implement short in-app notification such as login success/fail message.
  
