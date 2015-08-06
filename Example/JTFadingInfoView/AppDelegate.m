@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "RootViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,11 +20,13 @@
   // Override point for customization after application launch.
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-  ViewController *mainVC = [[ViewController alloc] init];
+  RootViewController *rootVC = [[RootViewController alloc] init];
   
-  self.window.rootViewController = mainVC;
-  //mainVC.view.backgroundColor = [UIColor colorWithRed:2.0/255.0f green:237.0/255.0f blue:237.0/255.0f alpha:1.0f];
-  mainVC.view.backgroundColor = [UIColor whiteColor];
+  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootVC];
+  [navController setNavigationBarHidden:YES animated:YES];
+  
+  self.viewController = navController;
+  self.window.rootViewController = self.viewController;
   
   [self.window makeKeyAndVisible];
   

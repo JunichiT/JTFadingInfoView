@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
-  
+  [self.navigationController setNavigationBarHidden:NO animated:YES];
+  self.view.backgroundColor = [UIColor whiteColor];
   
   UIButton *buttonAppear = [[UIButton alloc] initWithFrame:CGRectMake(50, 100, 100, 50)];
   buttonAppear.backgroundColor = [UIColor greenColor];
