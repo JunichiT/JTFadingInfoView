@@ -5,9 +5,17 @@
 [![Platform](https://img.shields.io/cocoapods/p/JTFadingInfoView.svg?style=flat)](http://cocoadocs.org/docsets/JTFadingInfoView)
 
 ## Overview
+<<<<<<< HEAD
 `JTFadingInfoView` is a material designed style UIButton-based view with fade in/out animation features.
+=======
+`JTFadingInfoView` is google's material design like notification view with smooth fade in/out animation features, based on UIButton subclass.
 
-Using this, you can implement short in-app notification such as login success/fail message.
+You can select fade in/out direction as you like. Also, customizable properties can be tweaked behaviors and enhance your application UI cool.
+>>>>>>> Update README.md
+
+With this library, you can easily implement floating in-app notification to your app, such as login success/fail notification messages.
+ 
+ ![Screen shot](Docs/logInDemo.gif)
  
 ## Installation
 JTFadingInfoView is available on CocoaPods.
@@ -52,6 +60,8 @@ JTFadingInfoView has parameters to customize behaviors as you like:
 @property JTFadeOutDirectionType fadeOutDirection;
 ```
 
+![Screen shot](Docs/parameterDemo.gif)
+
 ## Change History
 ### 1.0.0
 - First release 
@@ -59,6 +69,11 @@ JTFadingInfoView has parameters to customize behaviors as you like:
 ### 1.0.1
 - Bug Fix
 
+<<<<<<< HEAD
+=======
+### 1.0.2
+- Bug Fix
+>>>>>>> Update README.md
 
 ## Requirements
 iOS 7.0 or later
