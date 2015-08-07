@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JTFadingInfoView"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "A UIButton-based view with fade in/out animation features."
   s.homepage         = "https://github.com/JunichiT/JTFadingInfoView"
   s.screenshots      = "https://raw.githubusercontent.com/JunichiT/JTFadingInfoView/master/Docs/simple.gif"
