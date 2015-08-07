@@ -15,10 +15,11 @@
 		56011E8A1B6D7EF800A66DB9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56011E851B6D7D9E00A66DB9 /* Info.plist */; };
 		56011E8F1B6D800B00A66DB9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56011E8E1B6D800B00A66DB9 /* Images.xcassets */; };
 		56011E941B6EC49C00A66DB9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E911B6EC49C00A66DB9 /* AppDelegate.m */; };
-		56011E951B6EC49C00A66DB9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56011E931B6EC49C00A66DB9 /* ViewController.m */; };
 		56D0A1831B73CB3400F0C5DE /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D0A1811B73CB3400F0C5DE /* LogInViewController.m */; };
 		56D0A1841B73CB3400F0C5DE /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D0A1821B73CB3400F0C5DE /* LogInViewController.xib */; };
 		56D0A1871B73F77C00F0C5DE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D0A1861B73F77C00F0C5DE /* RootViewController.m */; };
+		56D0A1921B74B3A000F0C5DE /* PropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D0A1901B74B3A000F0C5DE /* PropertyViewController.m */; };
+		56D0A1931B74B3A000F0C5DE /* PropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D0A1911B74B3A000F0C5DE /* PropertyViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,6 @@
 		56011E8E1B6D800B00A66DB9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = JTFadingInfoView/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		56011E901B6EC49C00A66DB9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = JTFadingInfoView/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		56011E911B6EC49C00A66DB9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = JTFadingInfoView/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		56011E921B6EC49C00A66DB9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = JTFadingInfoView/ViewController.h; sourceTree = SOURCE_ROOT; };
-		56011E931B6EC49C00A66DB9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = JTFadingInfoView/ViewController.m; sourceTree = SOURCE_ROOT; };
 		5669C38E1B67D5FE003A2B83 /* JTFadingInfoView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTFadingInfoView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5669C3A71B67D5FE003A2B83 /* JTFadingInfoViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTFadingInfoViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D0A1801B73CB3400F0C5DE /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInViewController.h; path = JTFadingInfoView/LogInViewController.h; sourceTree = SOURCE_ROOT; };
@@ -51,6 +50,9 @@
 		56D0A1821B73CB3400F0C5DE /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LogInViewController.xib; path = JTFadingInfoView/LogInViewController.xib; sourceTree = SOURCE_ROOT; };
 		56D0A1851B73F77C00F0C5DE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = JTFadingInfoView/RootViewController.h; sourceTree = SOURCE_ROOT; };
 		56D0A1861B73F77C00F0C5DE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = JTFadingInfoView/RootViewController.m; sourceTree = SOURCE_ROOT; };
+		56D0A18F1B74B3A000F0C5DE /* PropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PropertyViewController.h; path = JTFadingInfoView/PropertyViewController.h; sourceTree = SOURCE_ROOT; };
+		56D0A1901B74B3A000F0C5DE /* PropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PropertyViewController.m; path = JTFadingInfoView/PropertyViewController.m; sourceTree = SOURCE_ROOT; };
+		56D0A1911B74B3A000F0C5DE /* PropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PropertyViewController.xib; path = JTFadingInfoView/PropertyViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,11 +156,12 @@
 		56D0A1891B73F85400F0C5DE /* Children */ = {
 			isa = PBXGroup;
 			children = (
-				56011E921B6EC49C00A66DB9 /* ViewController.h */,
-				56011E931B6EC49C00A66DB9 /* ViewController.m */,
 				56D0A1801B73CB3400F0C5DE /* LogInViewController.h */,
 				56D0A1811B73CB3400F0C5DE /* LogInViewController.m */,
 				56D0A1821B73CB3400F0C5DE /* LogInViewController.xib */,
+				56D0A18F1B74B3A000F0C5DE /* PropertyViewController.h */,
+				56D0A1901B74B3A000F0C5DE /* PropertyViewController.m */,
+				56D0A1911B74B3A000F0C5DE /* PropertyViewController.xib */,
 			);
 			name = Children;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				56011E811B6D7D8400A66DB9 /* Info.plist in Resources */,
 				56011E8F1B6D800B00A66DB9 /* Images.xcassets in Resources */,
 				56011E891B6D7EF100A66DB9 /* LaunchScreen.xib in Resources */,
+				56D0A1931B74B3A000F0C5DE /* PropertyViewController.xib in Resources */,
 				56011E8A1B6D7EF800A66DB9 /* Info.plist in Resources */,
 				56D0A1841B73CB3400F0C5DE /* LogInViewController.xib in Resources */,
 			);
@@ -267,9 +271,9 @@
 			files = (
 				56011E821B6D7D8400A66DB9 /* main.m in Sources */,
 				56011E751B6D7D4D00A66DB9 /* JTFadingInfoView.m in Sources */,
+				56D0A1921B74B3A000F0C5DE /* PropertyViewController.m in Sources */,
 				56D0A1871B73F77C00F0C5DE /* RootViewController.m in Sources */,
 				56D0A1831B73CB3400F0C5DE /* LogInViewController.m in Sources */,
-				56011E951B6EC49C00A66DB9 /* ViewController.m in Sources */,
 				56011E941B6EC49C00A66DB9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

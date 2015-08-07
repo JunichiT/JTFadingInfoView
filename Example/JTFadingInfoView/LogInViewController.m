@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+  self.textField.delegate = self;
+  self.passField.delegate = self;
   [self.navigationController setNavigationBarHidden:YES animated:YES];
 
   [self.view sendSubviewToBack:self.frameView];
@@ -30,6 +32,12 @@
   caLayer.shadowOpacity = 0.4f;
   caLayer.shadowOffset = CGSizeMake(0.0f, 3.0f);
 
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+  [textField resignFirstResponder];
+  return YES;
 }
 
 - (IBAction)tapCloseButton:(id)sender {
@@ -62,6 +70,7 @@
   frame.size.height = 40;
   
   JTFadingInfoView *infoView = [[JTFadingInfoView alloc] initWithFrame:frame label:msg];
+  infoView.appearingDuration = 0.4;
   [self.view addSubview:infoView];
   
 }

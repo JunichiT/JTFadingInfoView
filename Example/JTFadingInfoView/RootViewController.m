@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "ViewController.h"
+#import "PropertyViewController.h"
 #import "LogInViewController.h"
 
 @interface RootViewController ()
@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
   [self.navigationController setNavigationBarHidden:NO animated:YES];
+  [self.navigationController setTitle:@"JTFadingInfoView Sample"];
   self.view.backgroundColor = [UIColor whiteColor];
   
   CGRect frame = CGRectZero;
@@ -59,9 +60,15 @@
   [self.view addSubview:logInDemo];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+  [self.navigationController setNavigationBarHidden:NO animated:YES];
+
+}
+
 - (void)pressedPropertiesDemo
 {
-  ViewController *propertyDemoVC = [[ViewController alloc] init];
+  PropertyViewController *propertyDemoVC = [[PropertyViewController alloc] init];
   [self.navigationController pushViewController:propertyDemoVC animated:YES];
 }
 

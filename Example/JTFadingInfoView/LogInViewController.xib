@@ -11,6 +11,8 @@
                 <outlet property="backGroundImage" destination="xzC-pY-dcK" id="Ous-m1-7Yb"/>
                 <outlet property="closeButton" destination="IYT-Tb-M6O" id="Re9-5h-gIY"/>
                 <outlet property="frameView" destination="IAH-Wd-0kC" id="C9k-qY-965"/>
+                <outlet property="passField" destination="DYe-WT-AdV" id="l6t-q2-aRu"/>
+                <outlet property="textField" destination="PIJ-xn-BFa" id="YFG-qk-2uO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -105,7 +107,7 @@
                 <constraint firstItem="IAH-Wd-0kC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="rkW-FO-1YC"/>
                 <constraint firstItem="9U3-Vv-eFP" firstAttribute="leading" secondItem="IAH-Wd-0kC" secondAttribute="leading" constant="91" id="sAX-RC-C7N"/>
             </constraints>
-            <point key="canvasLocation" x="257" y="440"/>
+            <point key="canvasLocation" x="133" y="440"/>
         </view>
     </objects>
     <resources>

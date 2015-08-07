@@ -215,7 +215,7 @@
       
     case JTFadeOutDirectionToRight:
       //NSLog(@"JTFadeOutDirectionToRight");
-      pos.origin.y += self.animationMovement;
+      pos.origin.x += self.animationMovement;
       break;
       
     case JTFadeOutDirectionToPresentPosition:
@@ -229,7 +229,7 @@
   // Do animation if the property selected YES
   if (self.isAnimationEnabled) {
     [UIView animateWithDuration: self.disappearingDuration
-                          delay: 0.5f
+                          delay: self.appearingDuration
                         options: UIViewAnimationOptionLayoutSubviews
                      animations: ^{
                        self.alpha = 0.0f;
