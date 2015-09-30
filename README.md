@@ -1,3 +1,5 @@
+![Title](Docs/JTFadingInfoView_Title.png)
+
 # JTFadingInfoView
 
 [![Version](https://img.shields.io/cocoapods/v/JTFadingInfoView.svg?style=flat)](http://cocoadocs.org/docsets/JTFadingInfoView)
